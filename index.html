@@ -1,95 +1,205 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>University of Information Technology</title>
-    <style>
-       html{
-            font-size: 10px;
-        }
-      .title{
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-family: sans-serif;
-        font-size: 3rem;
-      }
-      .navi1{
-        position: absolute;
-        width: auto;
-        right: 20px;
-        top: 10;
-      }
-      img {
-            display: block;
-            max-width:140px;
-            max-height:70px;
-            width: auto;
-            height: auto;
-        }
-      .navi{
-          font-size: 1.5rem;
-          display: inline-block;
-      }
-      .header{
-        background: #e7cfdb;
-        position: relative;
-        z-index: 100;
-        width: 100%;
-        z-index: 1000;
-        margin: 0 auto;
-        text-align: center;
-        min-height: 200px;
-      }
-      
-     a[href*="Register"]{
-       background: url('https://icon-library.com/images/register-icon/register-icon-29.jpg') no-repeat 100% 0;
-        background-size: 16px, 16px;
-        padding-top: 0px;
-        padding-right: 19px;
-     }
-     a[href*="Login"]{
-       background: url('https://icon-library.com/images/login-icon/login-icon-23.jpg') no-repeat 100% 0;
-        background-size: 16px, 16px;
-        padding-right: 19px;
-     }
-     a{
-       text-decoration: none;
-     }
-    </style>
-  </head>
-<body>
-<header class="header" style="width: 1042px;">
-	
-        <div class="title"> 
-        <a href="https://www.facebook.com/" title="Bakery Store">
-        Chị Chị Em Em Bakery </a>
-        </h1>
-        </div>
-        <div class="navi1">
-            <div class="topcartlink">
-                <a href="giohang" class="cart">
-                  <i class="icon-cart" >
-                    <img src="https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg">
-                  </i>
-                
-             </a>
-            </div>
-            <span></span>
-            <div class="user">
-              <ul >
-                <li class ="navi"><a href="Register" class="register">
-                  Register</a></li>
-                <li class ="navi"> | </li>
-                  <li class ="navi"><a href="Login" class="login">
-                    Login</a></li>
-            
-             </ul>
-            </div>
-            
-        </div>
-      
-</header>
-</body>
+    <title>CHỊ CHỊ EM EM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="html, body {.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+	  <style>
+		  /* || General setup */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
   
+  html {
+    font-size: 10px;
+    background-color: #a9a9a9;
+  }
+  
+  body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+.sender-column {
+text-align: right;
+}
+  
+  /* || typography */
+  
+  h1, h2, h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2a2a2a;
+  }
+  
+  p, input, li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2a2a2a;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  /* || header layout */
+  
+  header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+
+  
+  main, header, nav, article, aside, footer, section {
+    background-color: rgba(108, 64, 119, 0.5);
+    padding: 1%;
+  }
+  
+  h1 {
+    flex: 5;
+    text-transform: uppercase;
+  }
+  
+  header img {
+    display: block;
+    height: 100px;
+    padding-top: 50px;
+  }
+  
+  nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  
+  nav a, nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  /* || main layout */
+  
+  main {
+    display: flex;
+  }
+  
+  article, section {
+    flex: 2;
+  }
+  
+  aside {
+    flex: 2;
+    margin-left: 8px;
+    padding: 5%;
+  }
+  
+  aside a {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  
+  aside img {
+    max-width: 100%;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }
+	  </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <address>
+            <pre class="sender-column">
+  <img src="SideTool-Shopping-cart-removebg-preview.png" alt="Giỏ hàng">
+  Register | Longin
+</pre>
+</addres>
+</div>
+  <nav>
+        <ul>
+          <li><span>Home</span></li>
+          <li><a href="#">Searching</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
+          </nav>
+        
+      
+
+    </header>
+
+<main>
+  <article>
+    <h2>About us</h2>
+
+    <p>Luôn mang trong mình sứ mệnh vì khách hàng. Chúng tôi luôn cố gắng nổ lực để mang đến cho mọi người những trải nghiệm mới lạ, những chiếc bánh, từng hương vị đậm tình thương.</p>
+
+    <p>Bạn không cần lo lắng về điều gì, mọi thứ chúng tôi đều cung cấp cho khách hàng những nguyên liệu sạch, công thức lưu truyền 3 đời. Bạn chỉ cần liên lạc với chúng tôi và chúng tôi sẽ giải quyết cơn thèm ăn của bạn </p>
+  </article>
+  <aside>
+    <a href="cake-09.jpg"><img src="cake-09.jpg" alt="BÁNH NGỌT"></a>
+   </aside>
+    </main>
+    <main>
+       <article>
+  
+        <a href="0002712_angel-slice-cupcake_140.jpeg"><img src="0002712_angel-slice-cupcake_140.jpeg" alt="BÁNH NGỌT"></a>
+      </article>
+      <aside>
+       <h2>Why Choose Us</h2>
+        <p>
+        E Aenean quis maximus purus.
+        E Pellentesque habitant morbi tristique.
+        E Donec vehicula tortor turpis.
+        E Morbi pharetra bibendum odio quis luctus.
+        E Quisque est dolor rutrum a bibendum.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
