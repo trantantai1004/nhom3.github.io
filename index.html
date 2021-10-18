@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,12 +19,12 @@
       .navi1{
         position: absolute;
         width: auto;
-        right: 10px;
+        right: 20px;
         top: 10;
       }
       img {
             display: block;
-            max-width:70px;
+            max-width:140px;
             max-height:70px;
             width: auto;
             height: auto;
@@ -32,14 +33,7 @@
           font-size: 1.5rem;
           display: inline-block;
       }
-      .user img{
-          display: block;
-            max-width:30px;
-            max-height:30px;
-            width: auto;
-            height: auto;
-      }
-      header{
+      .header{
         background: #e7cfdb;
         position: relative;
         z-index: 100;
@@ -49,10 +43,18 @@
         text-align: center;
         min-height: 200px;
       }
-      .user{
-        text-align: left
-      }
-     
+      
+     a[href*="Register"]{
+       background: url('https://icon-library.com/images/register-icon/register-icon-29.jpg') no-repeat 100% 0;
+        background-size: 16px, 16px;
+        padding-top: 0px;
+        padding-right: 19px;
+     }
+     a[href*="Login"]{
+       background: url('https://icon-library.com/images/login-icon/login-icon-23.jpg') no-repeat 100% 0;
+        background-size: 16px, 16px;
+        padding-right: 19px;
+     }
     </style>
   </head>
 <body>
@@ -66,25 +68,29 @@
         <div class="navi1">
             <div class="topcartlink">
                 <a href="giohang" class="cart">
-                <img src="https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg">
+                  <i class="icon-cart" >
+                    <img src="https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg">
+                  </i>
+                
              </a>
             </div>
+            <span></span>
             <div class="user">
               <ul >
                 <li class ="navi"><a href="Register" class="register">
-                  <img src="https://icon-library.com/images/register-icon/register-icon-29.jpg">
                   Register</a></li>
+                <li class ="navi"> | </li>
                   <li class ="navi"><a href="Login" class="login">
-                    <img src="https://icon-library.com/images/login-icon/login-icon-23.jpg">
                     Login</a></li>
             
              </ul>
             </div>
-            <span></span>
+            
         </div>
       
 </header>
 </body>
   
+
 
   
