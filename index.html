@@ -147,20 +147,71 @@ text-align: right;
   footer {
     margin-top: 10px;
   }
+  .navi1{
+    position:fixed;
+    width: auto;
+    right: 120px;
+    top: -50px;
+      
+  }
+  .navi{
+          font-size: 1.5rem;
+          display: inline-block;
+      }
+  .imgcard {
+            display: block;
+            max-width:50px;
+            max-height:50px;
+            width: auto;
+            height: auto;
+        }
+  a[href*="Register"]{
+       background: url('https://icon-library.com/images/register-icon/register-icon-29.jpg') no-repeat 100% 0;
+        background-size: 16px, 16px;
+        padding-top: 0px;
+        padding-right: 19px;
+     }
+     a[href*="Login"]{
+       background: url('https://icon-library.com/images/login-icon/login-icon-23.jpg') no-repeat 100% 0;
+        background-size: 16px, 16px;
+        padding-right: 19px;
+     }
+     a{
+       text-decoration: none;
+     }
 	  </style>
   </head>
 
   <body>
-    <header>
-      <div>
-        <address>
-            <pre class="sender-column">
-  <img src="SideTool-Shopping-cart-removebg-preview.png" alt="Giỏ hàng">
-  Register | Longin
-</pre>
-</addres>
-</div>
-  <nav>
+    <header style="height: 180px;">
+        <div class="title"> 
+            <a href="https://www.facebook.com/" title="Bakery Store">
+            Chị Chị Em Em Bakery </a>
+            </h1>
+            </div>
+            <div class="navi1">
+                <div class="topcartlink">
+                    <a href="giohang" class="cart">
+                      <i class="icon-cart" >
+                        <img class = "imgcard" src="https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg">
+                      </i>
+                    
+                 </a>
+                </div>
+                <span></span>
+                <div class="user">
+                  <ul >
+                    <li class ="navi"><a href="Register" class="register">
+                      Register</a></li>
+                    <li class ="navi"> | </li>
+                      <li class ="navi"><a href="Login" class="login">
+                        Login</a></li>
+                
+                 </ul>
+                </div>
+                
+            </div>
+  <nav style="height: 0px;background-color: #82715b;">
         <ul>
           <li><span>Home</span></li>
           <li><a href="#">Searching</a></li>
