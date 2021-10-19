@@ -82,12 +82,16 @@ text-align: right;
     text-transform: uppercase;
   }
   
-  header img {
-    display: block;
-    height: 100px;
-    padding-top: 50px;
-  }
-  
+  .header {
+    background: #fcecf4;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    z-index: 1000;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 120px;
+}
   nav {
     height: 50px;
     flex: 100%;
@@ -102,7 +106,7 @@ text-align: right;
   }
   
   nav li {
-    display: inline;
+    display: inline-block;
     text-align: center;
     flex: 1;
   }
@@ -117,7 +121,7 @@ text-align: right;
     color: black;
   
   }
-  
+ 
   /* || main layout */
   
   main {
@@ -147,24 +151,20 @@ text-align: right;
   footer {
     margin-top: 10px;
   }
-  .navi1{
-    position:fixed;
+  .shopping-cart-summary {
+    position: absolute;
     width: auto;
-    right: 120px;
-    top: -50px;
-      
+    right: 20px;
+    top: 0;
+  }
+  #topcartlink {
+    display: block;
+    max-width: 400px;
   }
   .navi{
           font-size: 1.5rem;
           display: inline-block;
       }
-  .imgcard {
-            display: block;
-            max-width:50px;
-            max-height:50px;
-            width: auto;
-            height: auto;
-        }
   a[href*="Register"]{
        background: url('https://icon-library.com/images/register-icon/register-icon-29.jpg') no-repeat 100% 0;
         background-size: 16px, 16px;
@@ -176,47 +176,69 @@ text-align: right;
         background-size: 16px, 16px;
         padding-right: 19px;
      }
+     a[href*="Giohang"]{
+      background: url('https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg') no-repeat 100% 0;
+                background-size: 30px, 30px;
+                  padding-right: 30px;
+     }
      a{
        text-decoration: none;
      }
+     .nav-menu ul li#home_logo a {
+    padding: 0;
+    position: absolute;
+    background: url('https://i.imgur.com/v1ugcDg.png') no-repeat center;
+    background-size: 35%,90%;
+    left: 33%;
+    top: 16%;
+    width: 35%;
+    height: 90%;
+    display: block;
+  }
+
 	  </style>
   </head>
 
   <body>
-    <header style="height: 180px;">
+    <header class="header">
         <div class="title"> 
             <a href="https://www.facebook.com/" title="Bakery Store">
             Chị Chị Em Em Bakery </a>
             </h1>
             </div>
-            <div class="navi1">
-                <div class="topcartlink">
-                    <a href="giohang" class="cart">
-                      <i class="icon-cart" >
-                        <img class = "imgcard" src="https://icon-library.com/images/full-shopping-cart-icon/full-shopping-cart-icon-13.jpg">
-                      </i>
-                    
-                 </a>
-                </div>
-                <span></span>
-                <div class="user">
-                  <ul >
-                    <li class ="navi"><a href="Register" class="register">
-                      Register</a></li>
-                    <li class ="navi"> | </li>
-                      <li class ="navi"><a href="Login" class="login">
-                        Login</a></li>
-                
-                 </ul>
-                </div>
+            <div id="linkstofix" class="shopping-cart-summary">
+              <div id="topcartlink">
+                <a href="giohang" class="ico-cart" >
+                  <i class="flaticon-shopping229"style="font-size: 2rem;">
+             <a href="Giohang" class="ico-register" >Giỏ hàng</a>
+          
+              </i></a>
+          
+              </div>
+          
+              <span></span>
+              <div class="user">
+                <ul>
+                  
+                    <li class ="navi"><a href="Register" class="ico-register">Register</a></li>
+                    <li class ="navi"><a href="Login" class="ico-login">Log in</a></li>
+                  
+                </ul>
+              </div>
+            </div>
                 
             </div>
-  <nav style="height: 0px;background-color: #82715b;">
+  <nav class ="nav-menu"  style="height: 0px;background-color: #82715b;">
         <ul>
           <li><span>Home</span></li>
           <li><a href="#">Searching</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Location</a></li>
+        <div class ="logo">
+          <li id="home_logo">
+            <a href="#" ></a>
+          </li>
+        </div>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Location</a></li>
           </ul>
           </nav>
         
