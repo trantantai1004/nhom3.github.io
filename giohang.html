@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <style>
+      * {
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;    
+          }
+          @font-face {
+              font-family: "Pacifico";
+              src: url(asset/font/Pacifico-Regular.ttf);
+          }
+
+          html{
+              font-size: 16px;
+              font-family: Arial, Helvetica, sans-serif;
+              background-image: url(asset/img/bg.jpg);
+              background-size: 600px;
+          }
+          a{
+              text-decoration: none;
+          }
+          a:active{
+              color: rgb(62, 64, 189);
+          }
+          p{font-size:1.5rem}
+          body{
+              position: relative;
+              width: 70%;
+              left: 15%;
+          }
+          #background{
+              position: absolute;
+              width: 100%;
+              height: 120vh;
+              background: url(asset/img/tart_bg.png) no-repeat fixed ;
+              background-size: 100%;
+          }
+          #head{
+              position: relative;
+              width: 100%;
+              background-color: #facbcb
+          }
+
+          #nav1{
+              position: absolute;
+              display: inline-block;
+              top: 40px;
+              right: 50px;
+              color:#7c7777
+          }
+
+          #nav1 li{
+              right:10px;
+              display:inline-block;
+              margin-right: 10px;
+              font-size: 24px;
+          }
+
+          #nav1 a{
+              color:#7c7777
+          }
+          #nav1 a:hover{
+              color: black
+          }
+
+          h1{
+              position: absolute;
+              width: 26%;
+              height: 100px;
+              line-height: 100px;
+              font-family:"Pacifico",Arial, Helvetica;
+              text-align:center;
+              font-size:2.5rem;
+              top: 75px;
+              left: 37%;
+              background-color: #fab6b6;
+              border-radius: 50%;
+          }
+          #wrapper{
+              position: absolute;
+          }
+          table, th, td{
+              border: 1px solid rgba(0, 0, 0, 0.267);
+              border-collapse: collapse;
+          }
+          table{
+              position: relative;
+              top:60px;
+              left: 170px;
+              background-color:rgb(255, 230, 230);
+              text-align: center;
+              font-size: 1.5rem;
+              box-shadow: 0 0 0 1px rgba(102, 102, 102, 0);
+              border-radius: 50px;
+              border-style: hidden;
+          }
+          table li{
+              display: inline;
+              position: relative;
+              list-style-type: none;
+              margin: 0 40px
+          }
+          th, td{
+              padding: 15px 30px
+          }
+          ul{
+              text-align: left;
+              margin-top: 10px
+          }
+          .nav2{
+              position: absolute;
+              top: 400px;
+              right: -150px;
+          }
+          .nav2 li{
+              display: inline-block;
+          }
+          .button{
+              background-color: pink;
+              margin: 0 10px;
+              padding: 15px;
+              border-radius: 3px;
+          }
+          .button:hover{
+              border: 1px solid rgb(102, 102, 102)
+          }
+          .buymenu{
+              position: absolute;
+              width: 100%;
+              height: 400px;
+              background:conic-gradient(from -41.14deg at 50% 50%, #E9A5A5 -55.56deg, #9CE1FF 147.57deg, #E9A5A5 304.44deg, #9CE1FF 507.57deg);
+              border-radius: 50px;
+              top: 470px;
+              left: 17%
+          }
+          .total{
+              position: absolute;
+              width: 40%;
+              height: 60%;
+              background-color: white;
+              border-radius: 50px;
+              top: 5%;
+              right: 3%
+          }
+          .total p{
+              margin: 30px 20px;
+          }
+          .couponcheck{
+              position: absolute;
+              width: 40%;
+              height: 60%;
+              right: 2%;
+              top: 67%;
+          }
+          .couponcheck p{
+              margin:10px;
+          }
+
+          #slider{
+              position: absolute;
+              width: 500px;
+              height: 350px;
+              bottom:70%;
+              left: -550px;
+              text-align: center;
+              font-family: "Pacifico";
+
+          }
+          #slider p{
+              font-size: 2rem;
+          }
+          .slide-wrapper{
+              width: 1200px;
+              height: 300px;
+              -webkit-animation: slide 14s ease infinite;
+              overflow: auto;
+          }
+          .slide {
+              float: left;
+              height: 300px;
+              width: 300px;
+
+          }
+          @-webkit-keyframes slide {
+              20% {margin-left: 0px;}
+              30% {margin-left: -300px;}
+              50% {margin-left: -300px;}
+              60% {margin-left: -600px;}
+              80% {margin-left: -600px;}
+            }
+     </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="head">
+        <a href="#"><img src="asset/img/logo.png" width=120px height=120px alt="Tiệm bánh chị chị em em"></a>
+        <ul id="nav1">
+            <li><a href="#">Login</a></li>
+            <li>/</li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </div>
+
+    <h1>Giỏ hàng</h1>
+    <div id="wrapper">
+        <table>
+            
+            <tr>
+                <th>No</th>
+                <th>Product</th>
+                <th>QL</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td><ul>
+                    <li><img src="asset/img/cake_2.jpeg"></li>
+                    <li>Ghost cupcake</li>
+                </ul></td>
+                <td>10</td>
+                <td>300000 vnd</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td><ul>
+                    <li><img src="asset/img/cake_1.jpeg" width=92 height=92></li>
+                    <li>Cupcake</li>
+                </ul></td>
+                <td>5</td>
+                <td>100000 vnd</td>
+                <td><input type="checkbox" style="width=40px; height=40px"></td>
+            </tr>
+        </table>
+        <div class="nav2">
+            <ul>
+                <li><button class="button"><a href="#">Update</a></button></li>
+                <li><button class="button"><a href="#">Continue shopping</a></button></li>
+            </ul>
+        </div>
+
+        <div class="buymenu">
+            <div class="total">
+                <p>item quantities: </p>
+                <p>discount:      </p>
+                <p style="font-size:2rem; border-top:1px solid black; padding: 20px 0">Total: </p>
+            </div>
+            <div class="couponcheck">
+            <p style="font-size: 1rem">
+                <input type="checkbox">
+                I agree with the term of service
+            </p>
+            <p>
+                Coupon: 
+                <input type="text" style="height=200%">
+                <button class="button" style="padding:5px 20px">Check</button>
+            </p>
+            <div id="slider">
+                <p>Recomended</p>
+                <div class="slide-wrapper">
+                    <div class="slide"><img src="asset/img/rc_1.jpeg"></div>
+                    <div class="slide"><img src="asset/img/rc_2.png"></div>
+                    <div class="slide"><img src="asset/img/rc_3.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
