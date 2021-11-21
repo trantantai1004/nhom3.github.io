@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery Chị Chị Em Em</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,10 @@
   html,body{
             margin: 0;
             padding: 0;
-            width: auto;
+            width: 100%;
             height: auto;
             font-family:serif;
+
         }
         html{
   background-color: rgb(231, 231, 231);
@@ -23,8 +25,8 @@
    
   }
         body{
-            width: 1300px;;
-            min-width: 800px;
+            width: 100%;
+            
             margin: 0px auto;
       
         }
@@ -43,7 +45,7 @@ width: 1000px;
   flex-flow: row wrap;
   font-size: 20px;
   height: 200px;
-  width: 1300px;
+  width: 100%;
 }
   .Logo{
    width: 200px;
@@ -78,7 +80,7 @@ width: 1000px;
   main {
   
     background-image: linear-gradient(-90deg, #ffffff,#ffffff); 
-  width: 1300px;
+  width: 100%;
   display: flex;
   height: 800px;
   margin-top: -100px;
@@ -86,7 +88,7 @@ width: 1000px;
 }
 
 .mix{
-  width: 1300px;
+  width: 100%;
   height: 30px;
   margin-left: 0px;
   margin-right: -100px;
@@ -118,11 +120,11 @@ margin-right: 30px;
 
 aside {
   flex: 1;
-  margin-left: 10px;
+  margin-left: 1%;
   padding: 1%;
-  width: 50%;
+  width: 31%;
 
-  margin-top: 200px;
+  margin-top: 11%;
 }
 aside label{
   font-size: 25px;
@@ -144,7 +146,7 @@ margin-left: 100px;
 
 } 
 input{
-    width: 300px;
+    width: 37%;
     height: 100px;
     color: black;
     display: flex;
@@ -162,7 +164,7 @@ margin: 10px 0px 0px 250px;
       margin: 10px 0px 0px 250px;
     }
     .cmt3{
-      width: 500px;
+      width: 70%;
       height: 40px;
       margin: 10px 0px 10px 100px;
    
@@ -227,7 +229,7 @@ ul li ul li a {display:block !important;}
 ul li ul li:hover {background: rgb(117, 0, 0);}
 .halo{
   background-color: #fff;
-width: 1300px;
+width: 100%;
 height: 100px;
 border-left: 100px;
 font-size: 50px;
@@ -243,7 +245,7 @@ font-family: 'Ephesis', cursive;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: -10px 2px 2px 100px;
+  margin-right: 3%;
   transition-duration: 0.4s;
   border-radius: 70px/70px;
   cursor: pointer;
@@ -259,14 +261,14 @@ font-family: 'Ephesis', cursive;
 }
 
 .img{
-  width: 650px;
-  height: 500px;
-  margin: 50px 0px 0px 50px;
+  width: 70%;
+  height: 52%;
+  margin: 5% 0p 0 5%;
 }
 
 footer{
   font-size: 30px;
-  width: 1300px;
+  width: 100%;
   height: 150px;
   margin-top: 0px;
   text-align: center;
@@ -284,6 +286,51 @@ tbody{
   margin-bottom: 0px;
 
 }
+.ph{
+  padding-right: 25%;
+}
+.FQA{
+  padding-right: 31%;
+}
+@media only screen and (max-width: 1500px){
+  .ph{
+    padding-left: 30%;
+  }
+  .FQA{
+    padding-left: 18%;
+  }
+  .button{
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 900px){
+  .ph{
+    padding-left: 38%;
+  }
+  .FQA{
+    padding-left: 31%;
+  }
+  .button{
+    margin-left: 50%;
+  }
+  aside,article{
+    margin-top: 20%;
+  }
+  .cmt1,.cmt2{
+    margin-left: 45%;
+    width: 54%;
+
+  }
+  .th{
+    width: 50%;
+    margin-left: 10%;
+  }
+  .th1{
+    width: 67%;
+  }
+
+}
+
 </style>
   </head>
 
@@ -313,6 +360,7 @@ tbody{
   </tbody>
 <div class="halo">Xin chào. Chị Em chúng tôi có thể giúp gì cho bạn? </div>
 <main>
+ 
   <article>
     <area> 
   
@@ -320,7 +368,7 @@ tbody{
     <img class="search" src="https://i.imgur.com/ALdWMF8.png"alt="search"> 
 
 </area>
-   <section> <div class="th"style="margin-left: 100px;"> 
+   <section> <div class="th"style="margin-left: 10%;"> 
     <ul>
     <li>
       <a href="#">Tư Vấn</a>
@@ -363,6 +411,7 @@ tbody{
         </form>  
   </div>
   </aside>
+
 </main>
 <footer>
 
