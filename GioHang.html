@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<title>CHỊ CHỊ EM EM</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Giỏ hàng</title>
+    <style>
+       * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+@font-face {
+    font-family: "Pacifico";
+    src: url(asset/font/Pacifico-Regular.ttf);
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(asset/img/bg.jpg);
+    background-size: 600px;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: rgb(62, 64, 189);
+}
+p{font-size:1.5rem}
+body{
+    
+    width: 100%;
+    
+}
+#background{
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    background: url(asset/img/tart_bg.png) no-repeat fixed ;
+    background-size: 100%;
+}
+#head{
+    position: relative;
+    width: 100%;
+    background-color: #facbcb
+}
+
+#nav1{
+    position: absolute;
+    display: inline-block;
+    top: 40px;
+    right: 50px;
+    color:#7c7777
+}
+
+#nav1 li{
+    right:10px;
+    display:inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+#nav1 a{
+    color:#7c7777
+}
+#nav1 a:hover{
+    color: black
+}
+
+h1{
+    position: absolute;
+    width: 26%;
+    height: 100px;
+    line-height: 100px;
+    font-family:"Pacifico",Arial, Helvetica;
+    text-align:center;
+    font-size:2.5rem;
+    top: 75px;
+    left: 37%;
+    background-color: #fab6b6;
+    border-radius: 50%;
+}
+#wrapper{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+}
+table, th, td{
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-collapse: collapse;
+}
+table{
+    position: relative;
+    top:60px;
+    left: 170px;
+    background-color:rgb(255, 230, 230);
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 0 1px rgba(102, 102, 102, 0);
+    border-radius: 50px;
+    border-style: hidden;
+}
+table li{
+    display: inline;
+    position: relative;
+    list-style-type: none;
+    margin: 0 40px
+}
+th, td{
+    padding: 15px 30px
+}
+ul{
+    text-align: left;
+    margin-top: 10px
+}
+.nav2{
+    position: absolute;
+    margin-top: 9%;
+left: 57%;
+}
+.nav2 li{
+    display: inline-block;
+}
+.button{
+    background-color: #E29FAA;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Satisfy', cursive;
+}
+.button:hover{
+    border: 1px solid rgb(102, 102, 102)
+}
+.buymenu{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background:conic-gradient(from -41.14deg at 50% 50%, #E9A5A5 -55.56deg, #9CE1FF 147.57deg, #E9A5A5 304.44deg, #9CE1FF 507.57deg);
+    border-radius: 50px;
+    margin-top: 20%;
+    
+}
+.total{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50px;
+    top: 5%;
+    right: 3%
+}
+.total p{
+    margin: 30px 20px;
+}
+.couponcheck{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 2%;
+    top: 67%;
+}
+.couponcheck p{
+    margin:10px;
+}
+
+#slider{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    bottom:70%;
+    left: -120%;
+    text-align: center;
+    font-family: "Pacifico";
+
+}
+#slider p{
+    font-size: 2rem;
+}
+.slide-wrapper{
+    width: 1200px;
+    height: 300px;
+    -webkit-animation: slide 14s ease infinite;
+    overflow: auto;
+}
+.slide {
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius:20%;
+    margin-right: 20px
+}
+header{
+    width: 100%;
+    height: 265px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    font-style: style;
+}
+
+.header1{
+width: 100%;
+display: flex;
+height: 120px;
+background-color: #f08080;
+}
+.HH1{
+    font-family: 'Birthstone Bounce', cursive;
+margin-top: 30px;
+font-size: 40px;
+color:#fff;
+width: 35%;
+text-align: center;
+height:45px ;
+}
+.HHH1{
+ width: 30%;
+ height: 50px;   
+}
+.header2{
+    width: 100%;
+    height: 150px;
+   
+    /* border-top:solid #000; */
+}
+.cmt3{
+    width: 50%;
+    height: 41px;
+   margin-left:  80px;
+    text-align: left;
+    color: black;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin-top: 0px; 
+  
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid #f08080;
+    border-top: solid #FFF;
+    border-left: solid #FFF;
+    border-right: solid #FFF;
+  }
+  .search{
+      margin-top: 40px;
+      display: flex;
+      width: 40%;
+    }
+    .timkiem{
+      background-color: #f08080;
+      border: solid #f08080;
+      width: 40px;
+      height: 41px; 
+      background-image: #f08080;
+    
+      border-radius: 50%;
+      text-align: center; 
+    }
+    .LG{
+        width: 20%;
+        margin-top: -100px;
+        border-radius: 50% ;
+     
+    }
+
+.logo{
+
+  width: 200px;
+  background-color: #fff;
+  height: 200px;     border-radius: 50% ;
+  text-align: center;
+
+}
+.HH2{
+  font-family: 'Satisfy', cursive;
+    font-size: 10px;
+    width: 40%;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 12px;
+  
+  
+}
+nav{
+
+display: flex;
+background-color:#ffffff;
+}
+.HH2 nav a{
+text-align: center;  
+width: 15%;
+display:inline-flex;
+padding:10px;
+font-size:20px;
+color:rgb(0, 0, 0);
+text-decoration:none;
+}
+
+nav a{
+text-align: center;  
+width: 25%;
+display:inline-flex;
+padding:10px;
+font-size:20px;
+color:rgb(0, 0, 0);
+text-decoration:none;
+}
+
+.congcu {
+display: flex;
+font-size: 10px;
+   width: 100%;
+    height: 45px;
+    text-align: center;  
+}
+
+.congcu nav a:hover{
+border-bottom: solid #f08080;
+}
+.trong{
+height: 50px;
+background-color: #fff;
+width: 15%;
+}
+.navt{
+width: 70%;
+background-color: #fff;
+height: 50px; 
+font-family: 'Satisfy', cursive;
+}
+.navt a{
+width: 50%;
+margin-right: 20px ;
+text-align: center;
+
+}
+ul {
+display: inline;
+margin: 0;
+padding: 0;
+}
+ul li {display: inline-block;}
+
+ul li:hover ul {display: block;}
+ul li ul {
+position: absolute;
+width: 18%;
+text-align: center;
+display: none;
+}
+ul li ul li { 
+background: #ffcad4; 
+width: 80%;
+display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background:#f8ad9d ;border: solid #fff;}
+/* MAIN */
+main{
+   
+    width: 100%;
+    margin-top: auto;
+    margin-top: 280px;
+    font-family: 'Satisfy', cursive;
+
+
+}
+* {box-sizing:border-box}
+/* thiết lập style cho slideshow container */
+ .slideshow-container {
+   width: 100%;
+
+
+   position: relative;
+   margin: auto;
+ }
+/* ẩn hình ảnh cho phần tử slideshow */
+ .mySlides {
+   display: none;
+ }
+/* thiết kế nút mũi tên*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+/* thiết kế nút mũi tên next nằm phía bên phải */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+/* Thiết lập style cho số hiển thị của phần tử */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+/* thiết lập style  nút tròn điều khiển*/
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+.active, .dot:hover {
+   background-color: #717171;
+ }
+/* tạo hiệu ứng chuyển động fade */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ footer{
+  font-family: 'Roboto', sans-serif;
+background-color: #f08080;
+color: #fff;
+padding: 42px 45px 45px 51px;
+line-height: 1.85;
+font-size: 12px;
+text-align: left;
+position: absolute;
+top: 140%;
+width: 100%;
+}
+.trangcuoifooter{
+display: flex;
+flex-wrap: wrap;
+color: #FFF;
+justify-content: space-between;
+}
+.linkfooter a{
+color: inherit;
+color: #FFF;
+background-color: transparent;
+text-decoration: none;
+}
+.linkfooter li{
+margin-bottom: 5px;
+
+}.footerEmail{
+color: #f08080;
+background-color: #FFF;
+border: 1px solid #ddd;
+padding: 11px 35px;
+margin-left: 1px;
+}
+.footersubcribe{
+background-color:#fff;
+margin-top: 20px;
+padding: 14px 36px;
+border: 1px solid;
+color: #f08080;
+letter-spacing: .2em;
+cursor: pointer;
+border-color: #FFF;
+}
+button.footersubcribe:hover{
+  background-color: rgb(223, 124, 140);
+  color: #fff;
+
+}
+.foot a[href*="facebook"],a[href*="youtube"]{
+background: url('https://i.pinimg.com/originals/74/ad/16/74ad16b9e31615a3a3b5589c089146ca.jpg') no-repeat 100% 0;
+background-size: 25px, 10px;
+font-size: 24px;
+color: #c4c2c2;
+}
+.foot a[href*="instagram"]{
+background: url('https://i.pinimg.com/originals/5d/95/0d/5d950d59e24ee6e82d96770631e6f54e.jpg')no-repeat 100% 0;
+background-size: 25px, 10px;
+font-size: 24px;
+color: #c4c2c2;
+}
+.foot a[href*="youtube"]{
+background: url('https://i.pinimg.com/originals/ad/a0/53/ada053bdd4bdd39ee7e0f408ccb8bea7.jpg')no-repeat 100% 0;
+background-size: 25px, 10px;
+}
+.trangcuoifooter ul {
+list-style-type: none;
+}
+@-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+}
+@media only screen and (max-width: 1714px) and (min-width: 1531px){
+    .imgslide{
+        width: 85%;
+        margin-top: 15%;
+        margin-left: 13%;
+    }
+    .slide{
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    .buymenu
+    {
+        left: 12%;
+    }
+}
+@media only screen and (min-width: 1315px) and (max-width: 1531px){
+    .imgslide{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 45%;
+    }
+    .slide{
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    #wrapper{
+        right: 27%;
+    }
+    #slide2{
+        margin-left: -40px;
+    }
+    .buymenu
+    {
+        left: 12%;
+    }
+}
+@media only screen and (max-width: 1315px) and (min-width: 1140px){
+    .imgslide{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 13%;
+    }
+    .slide{
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    #wrapper{
+        right: 27%;
+    }
+    
+    .slide-wrapper {
+        width: 60%;
+margin-left: 46%;
+    }
+    #slider p{
+        margin-left: 40%;
+    }
+    #slider{
+        left: -175%;
+    }
+    .buymenu
+    {
+        left: 12%;
+    }
+   
+}
+@media only screen and (max-width: 1140px) and (min-width: 815px){
+    .imgslide{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    .slide{
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    #wrapper{
+        right: 27%;
+    }
+    
+    .slide-wrapper {
+        width: 60%;
+margin-left: 46%;
+    }
+    #slider p{
+        margin-left: 40%;
+    }
+    table{
+        left: 13%;
+    }
+    #wrapper{
+        right: 29%;
+    }
+    #slider{
+        left: -207%;
+    }
+    .buymenu
+    {
+        left: 12%;
+    }
+   
+}
+@media only screen and (min-width: 11px) and (max-width: 815px){
+    .imgslide{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    .slide{
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    #wrapper{
+        right: 27%;
+    }
+    
+    .slide-wrapper {
+        width: 60%;
+margin-left: 46%;
+    }
+    #slider p{
+        margin-left: 40%;
+    }
+    table{
+      left: 10%;
+    }
+    #wrapper{
+        right: 29%;
+    }
+    #slider{
+      left: -237%;
+    }
+    .buymenu
+    {
+      left: 9%;
+      width: 126%;
+      margin-top: 31%;
+    }
+    .nav2{
+      margin-top: 9%;
+    }
+   
+}
+</style>
+</head>
+<body>
+  <header>
+    
+    <div class="header1">
+                <marquee direction="down" scrollamount ="2" class="HH1" >
+                  Beautiful like you
+                        </marquee>
+                 <div class="HHH1"></div>
+                 <marquee direction="down" scrollamount ="2"class="HH1">
+                Delicious like me
+                    
+                         </marquee>
+    </div>
+    <div class="header2">
+        <div style="display: flex; width: 100%;">
+            <div class="search"><input class="cmt3"type="search" name="lastName"placeholder="Tìm kiếm" >
+                <div class="timkiem">
+                <img style=" width: 25px;height: 25px;margin-top: 5px;" src="sear.png"alt="search"></div></div>
+                 <div class="LG"><img class="logo" src="LG.png"alt="logo"></div>
+                 <div class="HH2">
+                        <nav>
+                            <div style="width:40%;"><a style="width:50%;" href="http://webcoban.vn/html/default.html">Account</a></div>
+                            <div style="width:30%;"><a style="width:50%;" style=" margin-right: -10px; margin-left: 18px;"href="http://webcoban.vn/css/default.html">Login</a></div>
+                            <div style="width:10%;"><a style="width:50%;" href="http://webcoban.vn/javascript/default.html">Register</a></div>
+    
+                        </nav>
+                 </div>
+        </div>
+        <div class="congcu">
+          <div class="trong"></div>
+            <div class="navt"><nav>
+                <div  style="width:45%;"><ul>
+                  <li style="font-family: 'Satisfy', cursive;">
+                      <a style="width:65%;" href="http://webcoban.vn/html/default.html">Product</a>
+                    <ul>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;" href="#">Link 1</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;" href="#">Link 2</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul></div>
+                <div  style="width:45%;">  <ul>
+                  <li style="font-family: 'Satisfy', cursive;">
+                      <a style="width:65%;"   href="http://webcoban.vn/css/default.html">Material</a>
+                    <ul>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 1</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 2</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul></div>
+                  <div style="width:45%;"><ul>
+                    <li style="font-family: 'Satisfy', cursive;">
+                        <a  style="width:55%;"  href="http://webcoban.vn/javascript/default.html">Tool</a>
+                      <ul>
+                        <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 1</a></li>
+                        <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 2</a></li>
+                        <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 3</a></li>
+                      </ul>
+                    </li>
+                  </ul></div>
+                 <div  style="width:45%;"> <ul>
+                  <li style="font-family: 'Satisfy', cursive;">
+                 
+              <a  style="width:65%;"  href="http://webcoban.vn/mysql/default.html">Design</a>
+                    <ul>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 1</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 2</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul></div>
+                 <div  style="width:45%;"> <ul>
+                  <li style="font-family: 'Satisfy', cursive;">
+                      <a  style="width:65%;"  href="http://webcoban.vn/php/default.html">Service</a>
+                    <ul>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 1</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 2</a></li>
+                      <li style="font-family: 'Satisfy', cursive;"><a style="border: none;"href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul></div>
+                <div style="width:45%;"> <ul>
+                  <li style="font-family: 'Satisfy', cursive;">
+                      <a  style="width:65%;"  href="http://webcoban.vn/php/default.html">Cart</a>
+                   
+                  </li>
+                </ul></div>
+                
+            </nav></div>
+                <div class="trong"></div>
+          
+                
+            </div>
+        </div>
+                        </header>
+    </header>
+    <main>
+    <div id="background"></div>
+    
+
+    <h1>Giỏ hàng</h1>
+    <div id="wrapper">
+        <table>
+            
+            <tr>
+                <th>No</th>
+                <th>Product</th>
+                <th>QL</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td><ul>
+                    <li><img src="asset/img/cake_2.jpeg"></li>
+                    <li>Ghost cupcake</li>
+                </ul></td>
+                <td>10</td>
+                <td>300000 vnd</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td><ul>
+                    <li><img src="asset/img/cake_1.jpeg" width=92 height=92></li>
+                    <li>Cupcake</li>
+                </ul></td>
+                <td>5</td>
+                <td>100000 vnd</td>
+                <td><input type="checkbox" style="width=40px; height=40px"></td>
+            </tr>
+        </table>
+        <div class="nav2">
+            <ul>
+                <li><button class="button"><a href="#">Update</a></button></li>
+                <li><button class="button"><a href="#">Continue shopping</a></button></li>
+            </ul>
+        </div>
+
+        <div class="buymenu">
+            <div class="total">
+                <p>item quantities: </p>
+                <p>discount:      </p>
+                <p style="font-size:2rem; border-top:1px solid black; padding: 20px 0">Total: </p>
+            </div>
+            <div class="couponcheck">
+            <p style="font-size: 1rem">
+                <input type="checkbox">
+                I agree with the term of service
+            </p>
+            <p>
+                Coupon: 
+                <input type="text" style="height=200%">
+                <button class="button" style="padding:5px 20px">Check</button>
+            </p>
+            <div id="slider">
+                <p>Recomended</p>
+                <div class="slide-wrapper">
+                    <div class="slide"><a href="#"><img class ="imgslide" src="asset/img/rc_1.jpeg"></a></div>
+                    <div id="slide2" class="slide"><a href="#"><img class ="imgslide" src="asset/img/rc_2.png"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+                 
+    <div class ="trangcuoifooter">
+      <div>
+        <div class ="footerlocation" style="padding: 10px; color: #fff;">
+          <h2 style=" font-size: 40px; font-family: 'Roboto', sans-serif;"> Location </h2>
+          <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;"><strong>University Information Technology&nbsp;</strong><br>Nhom 3, IE<br>Monday - Friday: 10:30am&nbsp;- 7:30pm<br>Saturday: 11:00am - 7:30pm<br>Sunday and Public Holidays: 11:00am - 7:00pm<br>Tel: 0916545216</p>
+        </div>
+        <ul>
+          <li class ="foot" style="display: inline;"> <a href="facebook">.....</a></li>
+          <li class ="foot" style="display: inline;"> <a href="instagram">.....</a></li>
+          <li class ="foot" style="display: inline;"> <a href="youtube">.....</a></li>
+        </ul>
+      </div>
+      <div class="linkfooter">
+        <h2 style="font-family: 'Roboto', sans-serif; font-size: 40px;" >Quick Links</h2>
+  
+        <ul style="padding: 6px; color: #fff;font-size: 18px;">
+            <li>
+              <a href="" >FAQ</a>
+            </li>
+            <li >
+              <a href="" >About Us</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Press</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+            <li>
+              <a href="" >Cart</a>
+            </li>
+            <li">
+              <a href="">Searching</a>
+            </li>
+          </ul>
+      </div>
+      <div class="footerlienlac" style="flex-basis: 325px;">
+        <h2 class="Footer__Title Heading u-h6" style=" font-size: 40px;font-family: 'Roboto', sans-serif;">Newsletter</h2>
+        
+          <p style="color: #fff;font-size: 18px;font-family: 'Roboto', sans-serif;">Subscribe to receive updates, access to exclusive deals, and more.</p>
+        <form style="margin-top: 18px;width: 100%;">
+          <input type="email"  class="footerEmail"  placeholder="Enter your email address" required="">
+          <button type="submit" class="footersubcribe">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>
